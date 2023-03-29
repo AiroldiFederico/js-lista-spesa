@@ -39,18 +39,14 @@ while ( index < 20 ) {
 
     //creo l'elemento li html
     const ulLi = document.createElement('li');
-
     
-    
-    //inserisco gli oggetti dell'array alla lista
-    document.getElementsByTagName('li').innerHTML = 
-    `
-    <span><input type="checkbox" > ${lista[index]} <span>
-    `;
-
-
     //li diventa figlio di ul
     document.getElementById("ulListID").appendChild(ulLi);
+
+    //inserisco gli oggetti dell'array alla lista
+    ulLi.innerHTML = `<input type="checkbox"><span> ${lista[index]}</span>`;
+
+    console.log(lista[index]);
     
     //incremento
     index++;
