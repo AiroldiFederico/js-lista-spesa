@@ -13,5 +13,19 @@ body {
     --color-3: #A63737;
     --color-4: #e8e8e8;
     --color-5: #262626;
-  }
+}
   
+ul li {
+    list-style-type: none;
+    margin-bottom: 0.4rem;
+    
+    width: 10rem;
+}
+
+ul li:hover {
+    background-color: #B6E1F2;
+}
+
+input {
+    margin-right: 1rem;
+}
